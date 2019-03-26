@@ -13,7 +13,7 @@ def main():
     conn = psycopg2.connect("dbname=news")
     cur = conn.cursor()
 
-#get info about the tables
+    # Q1
     print ("1. What are the most popular three articles of all time?")    
     sql_query =  """
                  select title, count(*) as view_count
@@ -24,7 +24,8 @@ def main():
                  limit 3;
                 """
     perform_query(cur, sql_query) 
-
+	
+    # Q2
     print ("2. Who are the most popular article authors of all time? ")    
     sql_query =  """
                   select name, count(*) as view_count
@@ -36,7 +37,7 @@ def main():
                   order by view_count desc;
                 """
     perform_query(cur, sql_query) 
-    
+    #Q3
     print ("3. On which days did more than 1% of requests lead to errors?")
     sql_query =  """
        select to_char(date,'MON DD YYYY'), err/total*100 as ratio
