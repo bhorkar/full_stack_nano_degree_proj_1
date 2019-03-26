@@ -2,7 +2,7 @@ import psycopg2
 
 
 def perform_query(cur, sql, explanation = 'views'):
-	#print ("{}".format(sql))
+	 
         cur.execute(sql)
 	row = [item for item in cur.fetchall()]
         for r in row:
