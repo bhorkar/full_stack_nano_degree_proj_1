@@ -16,6 +16,7 @@ The task is to create a reporting tool that prints out reports (in plain text) b
 * ```VirtualBox``` (https://www.virtualbox.org/wiki/Downloads)
 * ```Vagrantfile``` (https://github.com/udacity/fullstack-nanodegree-vm)
 
+## Installation instructions  
 Start the Ubuntu Linux installation with ```vagrant up```.
 Log into the Linux VM with ```vagrant ssh```. Load the data into the PostgreSQL database. Use the command ```psql -d news -f newsdata.sql```.
 
@@ -27,7 +28,7 @@ There are three tablesin the database:
 * The ```log table``` includes one entry for each time a user has accessed the site.
 
 
-#Running the program 
+##Running the program 
 The sql query can be run as 
 
 ```python3 analysis.py```
