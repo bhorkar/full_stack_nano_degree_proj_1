@@ -28,7 +28,7 @@ There are three tablesin the database:
 * The ```log table``` includes one entry for each time a user has accessed the site.
 
 
-##Running the program 
+## Running the program 
 The sql query can be run as 
 
 ```python3 analysis.py```
